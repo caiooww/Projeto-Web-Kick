@@ -1,1 +1,1 @@
-https://caiooww.github.io/Projeto-Web-Kick/tvshows.html
+https://caiooww.github.io/Projeto-Web-Kick/index.html

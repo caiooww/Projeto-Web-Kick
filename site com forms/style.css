@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto; /* added */
+    width: 80%; /* added */
+    max-width: 1200px; /* added */
+    padding: 20px;
+    box-sizing: border-box; /* added */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* changed from space-between to center */
+}
+
+.movie-list {
+    flex-basis: 60%;
+    padding: 20px;
+}
+
+.review-form {
+    flex-basis: 30%;
+    padding: 20px;
+}
+
+#movie-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#movie-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#movie-list li:last-child {
+    border-bottom: none;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#review-form label {
+    margin-bottom: 10px;
+}
+
+#review-form input, #review-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+#submit-review {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-review:hover {
+    background-color: #444;
+}

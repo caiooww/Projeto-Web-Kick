@@ -1,0 +1,156 @@
+/* Variables */
+:root {
+	--font-family: Arial, sans-serif;
+	--primary-color: #333;
+	--secondary-color: #fff;
+	--gap: 20px;
+  }
+  
+  /* Global styles */
+  body {
+	font-family: var(--font-family);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+  }
+  
+  /* Header styles */
+  header {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	padding: 1em;
+	text-align: center;
+  }
+  
+  header span {
+	padding-bottom: 30px;
+	font-weight: bold;
+	font-size: 45px;
+  }
+  
+  header h1 {
+	margin: 0;
+  }
+  
+  /* Navigation styles */
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	gap: var(--gap);
+  }
+  
+  nav li {
+	margin-right: 0;
+	display: inline-block;
+  }
+  
+  nav a {
+	color: var(--secondary-color);
+	text-decoration: none;
+  }
+  
+  nav a:hover {
+	color: #ccc;
+  }
+  
+  /* Main styles */
+  main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--gap);
+  }
+  
+  section {
+	background-color: var(--primary-color);
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  section a {
+	color: var(--secondary-color);
+	font-weight: bold;
+  }
+  
+  article {
+	flex: 1;
+	margin-right: var(--gap);
+  }
+  
+  aside {
+	flex: 0 0 450px; /* adjust the value according to the image width */
+	margin-left: var(--gap);
+  }
+  
+  aside img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5%;
+  }
+  
+  article {
+	margin-bottom: var(--gap);
+  }
+  
+  h3 {
+	margin-top: 0;
+  }
+  
+  p {
+	margin-bottom: 10px;
+  }
+  
+  /* Media queries */
+  
+  /* Mobile devices and small screens */
+  @media only screen and (max-width: 768px) {
+	main {
+	  display: flex;
+	  flex-direction: column;
+	}
+  }
+  
+  @media only screen and (max-width: 768px) {
+	section {
+	  display: list-item;
+	  padding: 20px;
+	  border-bottom: 1px solid #eaeaea;
+	}
+  }
+  
+  @media only screen and (max-width: 768px) {
+	section:last-child {
+	  border-bottom: none;
+	}
+  }
+  
+  @media only screen and (max-width: 768px) {
+	aside {
+	  flex: 0 0 100%; /* adjust the value according to the image width */
+	  margin-left: 0;
+	  margin-bottom: var(--gap);
+	}
+  }
+  
+  @media only screen and (max-width: 768px) {
+	aside img {
+	  width: 100%;
+	  height: auto;
+	  border-radius: 5%;
+	}
+  }
+  
+  @media only screen and (max-width: 768px) {
+	article {
+	  margin-right: 0;
+	}
+  }

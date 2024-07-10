@@ -1,4 +1,3 @@
-https://caiooww.github.io/Projeto-Web-Kick/index.html
+Um website simples e minimalista onde adicionarei reviews de coisas que me interessem (em ingles)
 
-
-um adendo, este repositório nao sera alterado pois irei reestruturar todo o site em uma nova versao (mantendo o layout)
+Projeto desenvolvido com base nos conhecimentos de Front End adiquiridos na KICK.
